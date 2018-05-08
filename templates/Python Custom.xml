@@ -1,0 +1,23 @@
+<templateSet group="Python Custom">
+  <template name="imports" value="import os&#10;import sys&#10;import logging&#10;&#10;import requests&#10;import pandas as pd&#10;&#10;# for local files, ensure parent directory is marked as sources root " description="default import statements" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="project_path" value="os.path.join(os.path.abspath(os.path.dirname(__file__)), '..')" description="Gets the Absolute path of the project" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="log_config" value="log_format = '%(asctime)s %(levelname)s:%(filename)s:%(funcName)s:%(lineno)d: %(message)s'&#10;logging.basicConfig(format=log_format, filename=None, level=logging.DEBUG)&#10;$END$" description="initial logging config function" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="class" value="class $NAME$():&#10;    def __init__(self):&#10;        $END$&#10;&#10;    def __str__(self):&#10;        pass&#10;&#10;    def __repr__(self):&#10;        pass&#10;" description="Class Skeleton" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+</templateSet>
