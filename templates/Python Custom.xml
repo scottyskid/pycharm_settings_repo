@@ -1,0 +1,12 @@
+<templateSet group="Python Custom">
+  <template name="imports" value="import os&#10;import sys&#10;import logging&#10;&#10;import pandas as pd&#10;import requests&#10;&#10;# if importing local packages insure src file is marked as source directory" description="Default Custom Imports" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="log_config" value="log_format = '%(asctime)s %(levelname)s:%(filename)s:%(funcName)s:%(lineno)d: %(message)s'&#10;logging.basicConfig(format=log_format, filename=None, level=logging.WARNING)" description="Default Log Config Setup" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+</templateSet>
