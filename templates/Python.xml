@@ -1,7 +1,0 @@
-<templateSet group="Python">
-  <template name="imports" value="import os&#10;import sys&#10;import logging&#10;&#10;import requests&#10;import pandas as pd&#10;&#10;# for local files, ensure parent directory is marked as sources root " description="default import statements" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="Python" value="true" />
-    </context>
-  </template>
-</templateSet>
