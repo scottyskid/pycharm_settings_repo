@@ -1,0 +1,12 @@
+<templateSet group="Python CHE">
+  <template name="session_che" value="proxies = {&#10;        'http': &quot;http://bc-cls03.ccla.com.au:3128&quot;,&#10;        'https': &quot;http://bc-cls03.ccla.com.au:3128&quot;,&#10;    }&#10;session = requests.Session()&#10;session.proxies = proxies&#10;conn = session.get(url)&#10;return conn" description="begin a requests session with che proxies" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="proxy_che" value="&quot;http://bc-cls03.ccla.com.au:3128&quot;" description="the che proxy string" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>

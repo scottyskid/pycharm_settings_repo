@@ -9,4 +9,15 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="abs_path" value="os.path.join(os.path.abspath(os.path.dirname(__file__)), '$FILE$')&#10;$END$" description="The absolute path of the current file" toReformat="false" toShortenFQNames="true">
+    <variable name="FILE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="session" value="session = requests.Session()&#10;conn = session.get(url)&#10;return conn.text" description="start a requests session" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
