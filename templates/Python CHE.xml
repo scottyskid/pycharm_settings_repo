@@ -14,4 +14,9 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="mssql_conn_string_che" value="def sqlalchemy_conn_string(dsn=&quot;test_scotty&quot;, uid=&quot;chepdata&quot;, pwd=&quot;chep2016DATA&quot;):&#10;    conn_str = f&quot;mssql+pyodbc://{uid}:{pwd}@{dsn}&quot;&#10;    logging.debug(f&quot;createed conn_string of {conn_str}&quot;)&#10;    return conn_str" description="function to create the odbc connection string for che" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
