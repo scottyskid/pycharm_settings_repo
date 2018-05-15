@@ -9,4 +9,9 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="pip_install_che" value="pip install --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --trusted-host pypi.org --proxy http://bc-cls03.ccla.com.au:3128 &lt;package_name&gt;" description="the pip install line for chep" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
 </templateSet>
