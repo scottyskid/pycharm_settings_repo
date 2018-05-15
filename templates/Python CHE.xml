@@ -1,0 +1,22 @@
+<templateSet group="Python CHE">
+  <template name="session_che" value="proxies = {&#10;        'http': &quot;http://bc-cls03.ccla.com.au:3128&quot;,&#10;        'https': &quot;http://bc-cls03.ccla.com.au:3128&quot;,&#10;    }&#10;session = requests.Session()&#10;session.proxies = proxies&#10;conn = session.get(url)&#10;return conn" description="begin a requests session with che proxies" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="proxy_che" value="&quot;http://bc-cls03.ccla.com.au:3128&quot;" description="the che proxy string" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="pip_install_che" value="pip install --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --trusted-host pypi.org --proxy http://bc-cls03.ccla.com.au:3128 &lt;package_name&gt;" description="the pip install line for chep" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="mssql_conn_string_che" value="def sqlalchemy_conn_string(dsn=&quot;test_scotty&quot;, uid=&quot;chepdata&quot;, pwd=&quot;chep2016DATA&quot;):&#10;    conn_str = f&quot;mssql+pyodbc://{uid}:{pwd}@{dsn}&quot;&#10;    logging.debug(f&quot;createed conn_string of {conn_str}&quot;)&#10;    return conn_str" description="function to create the odbc connection string for che" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+</templateSet>
