@@ -1,0 +1,28 @@
+<templateSet group="Python Custom">
+  <template name="imports" value="import os&#10;import sys&#10;import logging&#10;&#10;import pandas as pd&#10;import requests&#10;&#10;# if importing local packages insure src file is marked as source directory" description="Default Custom Imports" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="log_config" value="log_format = '%(asctime)s %(levelname)s:%(filename)s:%(funcName)s:%(lineno)d: %(message)s'&#10;logging.basicConfig(format=log_format, filename=None, level=logging.WARNING)" description="Default Log Config Setup" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="abs_path" value="os.path.join(os.path.abspath(os.path.dirname(__file__)), '$FILE$')&#10;$END$" description="The absolute path of the current file" toReformat="false" toShortenFQNames="true">
+    <variable name="FILE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="session" value="session = requests.Session()&#10;conn = session.get(url)&#10;return conn.text" description="start a requests session" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="df_to_db" value="import logging&#10;import time&#10;&#10;import numpy as np&#10;import pandas as pd&#10;from sqlalchemy import create_engine, event&#10;&#10;def sqlalchemy_conn_string(dsn=&quot;test_scotty&quot;, uid=&quot;chepdata&quot;, pwd=&quot;chep2016DATA&quot;):&#10;    conn_str = f&quot;mssql+pyodbc://{uid}:{pwd}@{dsn}&quot;&#10;    logging.debug(f&quot;createed conn_string of {conn_str}&quot;)&#10;    return conn_str&#10;&#10;&#10;def get_sqlalchemy_engine(conn_string, echo=False):&#10;    engine = create_engine(conn_string, echo=echo)&#10;&#10;    # This implements the execute many function when pd.to_sql is called to speed up exports&#10;    @event.listens_for(engine, 'before_cursor_execute')&#10;    def receive_before_cursor_execute(conn, cursor, statement, params, context, executemany):&#10;        if executemany:&#10;            cursor.fast_executemany = True&#10;&#10;    return engine&#10;&#10;&#10;def df_to_db(df, table, engine, if_exists='fail', chunksize=100000, dtype=None):&#10;    s = time.time()&#10;    df.to_sql(table, engine, if_exists=if_exists, index=False, chunksize=chunksize, dtype=dtype)&#10;    logging.info(f&quot;{time.time() - s}s to run df.to_sql with a df length of {len(df)}&quot;)&#10;" description="functions to get a df into a db" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+</templateSet>
