@@ -25,4 +25,10 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="new_script" value="import logging&#10;import os&#10;import sys&#10;&#10;import pandas as pd&#10;import requests&#10;&#10;# if importing local packages insure src file is marked as source directory&#10;&#10;DATA_IN_PATH = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'data_in'))&#10;DATA_OUT_PATH = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'data_out'))&#10;LOGS_PATH = os.path.normpath(os.path.join(os.path.dirname(__file__), 'logs'))&#10;&#10;&#10;&#10;if __name__ == &quot;__main__&quot;:&#10;    log_format = '%(asctime)s %(levelname)s:%(filename)s:%(funcName)s:%(lineno)d: %(message)s'&#10;    logging.basicConfig(format=log_format, filename=os.path.join(LOGS_PATH, &quot;virgin_scrape.log&quot;), level=logging.WARNING)&#10;    logger = logging.getLogger(__name__)&#10;    logger.warning(&quot;__main__ start&quot;)&#10;    &#10;    $END$&#10;&#10;    logger.warning(&quot;__main__ end&quot;)&#10;" description="The basic of starting a new script" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
 </templateSet>
