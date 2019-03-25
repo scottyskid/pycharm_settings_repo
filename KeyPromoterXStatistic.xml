@@ -78,7 +78,7 @@
           <IdeaActionID>FileChooser.GotoProject</IdeaActionID>
           <ShortCut>'Ctrl+2'</ShortCut>
           <Description>Project Directory</Description>
-          <Count>6</Count>
+          <Count>7</Count>
         </Item>
       </Statistic>
       <Statistic Action="Rename...">
