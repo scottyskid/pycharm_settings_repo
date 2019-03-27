@@ -161,6 +161,14 @@
           <Count>9</Count>
         </Item>
       </Statistic>
+      <Statistic Action="Stop 'early_learning_centers_scrape'">
+        <Item>
+          <IdeaActionID>Stop</IdeaActionID>
+          <ShortCut>'Ctrl+F2'</ShortCut>
+          <Description>Stop 'early_learning_centers_scrape'</Description>
+          <Count>7</Count>
+        </Item>
+      </Statistic>
       <Statistic Action="Structure">
         <Item>
           <IdeaActionID>ActivateStructureToolWindow</IdeaActionID>
