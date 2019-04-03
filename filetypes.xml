@@ -5,6 +5,7 @@
       <mapping pattern="Pipfile" type="PLAIN_TEXT" />
       <mapping pattern="cmd_commands" type="PLAIN_TEXT" />
       <mapping pattern="functions_and_classes" type="PLAIN_TEXT" />
+      <mapping ext="md" type="PLAIN_TEXT" />
       <mapping ext="pkl" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
