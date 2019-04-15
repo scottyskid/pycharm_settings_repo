@@ -16,7 +16,6 @@
       <mapping pattern="Pipfile" type="PLAIN_TEXT" />
       <mapping pattern="cmd_commands" type="PLAIN_TEXT" />
       <mapping ext="pkl" type="PLAIN_TEXT" />
-      <mapping ext="ipynb" type="Python" />
     </extensionMap>
   </component>
 </application>
