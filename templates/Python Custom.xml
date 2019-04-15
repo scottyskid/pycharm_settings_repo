@@ -1,21 +1,6 @@
 <templateSet group="Python Custom">
-  <template name="imports" value="import os&#10;import sys&#10;import logging&#10;&#10;import pandas as pd&#10;import requests&#10;&#10;# if importing local packages insure src file is marked as source directory" description="Default Custom Imports" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="Python" value="true" />
-    </context>
-  </template>
-  <template name="log_config" value="log_format = '%(asctime)s %(levelname)s:%(filename)s:%(funcName)s:%(lineno)d: %(message)s'&#10;logging.basicConfig(format=log_format, filename=None, level=logging.WARNING)" description="Default Log Config Setup" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="Python" value="true" />
-    </context>
-  </template>
   <template name="abs_path" value="os.path.join(os.path.abspath(os.path.dirname(__file__)), '$FILE$')&#10;$END$" description="The absolute path of the current file" toReformat="false" toShortenFQNames="true">
     <variable name="FILE" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="Python" value="true" />
-    </context>
-  </template>
-  <template name="session" value="session = requests.Session()&#10;conn = session.get(url)&#10;return conn.text" description="start a requests session" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
@@ -25,7 +10,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="new_script" value="#!/usr/bin/env python&#10;&#10;&quot;&quot;&quot;Doc string short description&#10;&#10;Docstring long description&#10;&quot;&quot;&quot;&#10;&#10;import logging, logging.config&#10;import os&#10;import sys&#10;import time&#10;&#10;import pandas as pd&#10;import requests&#10;import yaml&#10;from pprint import pprint&#10;&#10;# if importing local packages insure src file is marked as source directory&#10;&#10;__author__ = &quot;Scotty Skidmore&quot;&#10;__created__ = &quot;$CREATED$&quot;&#10;__copyright__ = &quot;Copyright 2019, CHE Proximity&quot;&#10;__credits__ = [&quot;Scotty Skidmore&quot;]&#10;&#10;__license__ = &quot;GPL&quot;&#10;__version__ = &quot;0.0.1&quot;&#10;__maintainer__ = &quot;Scotty Skidmore&quot;&#10;__email__ = &quot;scotty.skidmore@cheproximity.com.au&quot;&#10;__status__ = &quot;Development&quot; # &quot;Development&quot;, &quot;Prototype&quot;, or &quot;Production&quot;&#10;&#10;&#10;def setup_logging(default_path='logs/logging.yaml', default_level=logging.INFO, env_key='LOG_CFG'):&#10;    &quot;&quot;&quot;Setup logging configuration&#10;&#10;    &quot;&quot;&quot;&#10;    path = default_path&#10;    value = os.getenv(env_key, None)&#10;    if value:&#10;        path = value&#10;    if os.path.exists(path):&#10;        with open(path, 'rt') as f:&#10;            config = yaml.safe_load(f.read())&#10;        logging.config.dictConfig(config)&#10;    else:&#10;        logging.basicConfig(level=default_level)&#10;        logging.warning('logging.yaml not imported')&#10;&#10;&#10;&#10;if __name__ == &quot;__main__&quot;:&#10;    script_start = time.time()&#10;    try:&#10;        DATA_IN_PATH = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'data_in'))&#10;        DATA_OUT_PATH = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'data_out'))&#10;        LOGS_PATH = os.path.normpath(os.path.join(os.path.dirname(__file__), 'logs'))&#10;&#10;        setup_logging()&#10;        logging.info(&quot;__main__ start&quot;)&#10;&#10;        $END$&#10;&#10;        logging.info(&quot;__main__ end successfully&quot;)&#10;    except Exception as e:&#10;        logging.error(&quot;__main__ end with error&quot;)&#10;        raise&#10;    finally:&#10;        print(f&quot;the script took {time.time() - script_start}s to complete&quot;)" description="The basic of starting a new script" toReformat="false" toShortenFQNames="true">
+  <template name="new_script" value="#!/usr/bin/env python&#10;&#10;&quot;&quot;&quot;Doc string short description&#10;&#10;Docstring long description&#10;&quot;&quot;&quot;&#10;&#10;import logging, logging.config&#10;import os&#10;import sys&#10;import time&#10;&#10;import pandas as pd&#10;import numpy as np&#10;import requests&#10;import yaml&#10;from pprint import pprint&#10;&#10;# if importing local packages insure src file is marked as source directory&#10;&#10;__author__ = &quot;Scotty Skidmore&quot;&#10;__created__ = &quot;$CREATED$&quot;&#10;__copyright__ = &quot;Copyright 2019, CHE Proximity&quot;&#10;__credits__ = [&quot;Scotty Skidmore&quot;]&#10;&#10;__license__ = &quot;GPL&quot;&#10;__version__ = &quot;0.0.1&quot;&#10;__maintainer__ = &quot;Scotty Skidmore&quot;&#10;__email__ = &quot;scotty.skidmore@cheproximity.com.au&quot;&#10;__status__ = &quot;Development&quot; # &quot;Development&quot;, &quot;Prototype&quot;, or &quot;Production&quot;&#10;&#10;&#10;def setup_logging(default_path='logs/logging.yaml', default_level=logging.INFO, env_key='LOG_CFG'):&#10;    &quot;&quot;&quot;Setup logging configuration&#10;&#10;    &quot;&quot;&quot;&#10;    path = default_path&#10;    value = os.getenv(env_key, None)&#10;    if value:&#10;        path = value&#10;    if os.path.exists(path):&#10;        with open(path, 'rt') as f:&#10;            config = yaml.safe_load(f.read())&#10;        logging.config.dictConfig(config)&#10;    else:&#10;        logging.basicConfig(level=default_level)&#10;        logging.warning('logging.yaml not imported')&#10;&#10;&#10;&#10;if __name__ == &quot;__main__&quot;:&#10;    script_start = time.time()&#10;    try:&#10;        DATA_EXTRACT_PATH = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'data_extract'))&#10;        DATA_LOAD_PATH = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'data_load'))&#10;        DATA_TRANSFORM_PATH = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'data_transform'))&#10;        LOGS_PATH = os.path.normpath(os.path.join(os.path.dirname(__file__), 'logs'))&#10;&#10;        setup_logging()&#10;        logging.info(&quot;__main__ start&quot;)&#10;&#10;        $END$&#10;&#10;        logging.info(&quot;__main__ end successfully&quot;)&#10;    except Exception as e:&#10;        logging.error(&quot;__main__ end with error&quot;)&#10;        raise&#10;    finally:&#10;        print(f&quot;the script took {time.time() - script_start}s to complete&quot;)" description="The basic of starting a new script" toReformat="false" toShortenFQNames="true">
     <variable name="CREATED" expression="date(&quot;yyyy-MM-dd&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -39,6 +24,11 @@
       <option name="OTHER" value="true" />
       <option name="Python" value="false" />
       <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="new_requests_functions" value="def begin_session():&#10;    proxies = {&#10;            'http': &quot;http://bc-cls03.ccla.com.au:3128&quot;,&#10;            'https': &quot;http://bc-cls03.ccla.com.au:3128&quot;,&#10;        }&#10;    session = requests.Session()&#10;    session.proxies = proxies&#10;    return session&#10;&#10;&#10;def get_url(url, session, request_type='get', verify=True):&#10;    headers = {}&#10;    cookies = {}&#10;    data = {}&#10;&#10;    if request_type == 'get':&#10;        response = session.get(url)&#10;    elif request_type == 'post':&#10;        response = session.post(url, headers=headers, cookies=cookies, data=data)&#10;    else:&#10;        raise ValueError(&quot;request type has to be either 'get' or 'post'&quot;)&#10;    &#10;    return response&#10;&#10;&#10;def convert_to_beautiful_soup(response):&#10;    soup = BeautifulSoup(response.text)&#10;    return soup" description="creates the functions to begin webscraping" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
     </context>
   </template>
 </templateSet>

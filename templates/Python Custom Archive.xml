@@ -1,0 +1,22 @@
+<templateSet group="Python Custom Archive">
+  <template name="imports" value="import os&#10;import sys&#10;import logging&#10;&#10;import pandas as pd&#10;import requests&#10;&#10;# if importing local packages insure src file is marked as source directory" description="Default Custom Imports" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="log_config" value="log_format = '%(asctime)s %(levelname)s:%(filename)s:%(funcName)s:%(lineno)d: %(message)s'&#10;logging.basicConfig(format=log_format, filename=None, level=logging.WARNING)" description="Default Log Config Setup" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="session" value="session = requests.Session()&#10;conn = session.get(url)&#10;return conn.text" description="start a requests session" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="session_che" value="proxies = {&#10;        'http': &quot;http://bc-cls03.ccla.com.au:3128&quot;,&#10;        'https': &quot;http://bc-cls03.ccla.com.au:3128&quot;,&#10;    }&#10;session = requests.Session()&#10;session.proxies = proxies&#10;conn = session.get(url)&#10;return conn" description="begin a requests session with che proxies" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+</templateSet>
