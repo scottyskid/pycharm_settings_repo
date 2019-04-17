@@ -289,6 +289,14 @@
           <Count>2</Count>
         </Item>
       </Statistic>
+      <Statistic Action="Run 'redbook_scrape'">
+        <Item>
+          <IdeaActionID>Run</IdeaActionID>
+          <ShortCut>'Shift+F10'</ShortCut>
+          <Description>Run 'redbook_scrape'</Description>
+          <Count>1</Count>
+        </Item>
+      </Statistic>
       <Statistic Action="Run 'virgin_scrape'">
         <Item>
           <IdeaActionID>Run</IdeaActionID>
