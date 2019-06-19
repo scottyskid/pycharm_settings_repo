@@ -1,19 +1,32 @@
 <application>
   <component name="VimSettings">
-    <state version="4" enabled="false" />
+    <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
+      <file name="$USER_HOME$/OneDrive/@projects_sjbs/@personal/scrapy_test/src/tutorial/tutorial/pipelines.py" timestamp="1560914695826" />
       <file name="$USER_HOME$/OneDrive/@projects_sjbs/@personal/aws/.aws/config" timestamp="1560752381669">
         <mark key="[" line="1" column="9" />
         <mark key="]" line="1" column="9" />
         <mark key="." line="1" column="9" />
         <mark key="^" line="1" column="9" />
       </file>
+      <file name="$USER_HOME$/OneDrive/@projects_sjbs/@personal/scrapy_test/src/tutorial/tutorial/spiders/quotes_spider.py" timestamp="1560914325350">
+        <mark key="'" line="10" column="43" />
+        <mark key="[" line="12" column="22" />
+        <mark key="]" line="14" column="66" />
+        <mark key="^" line="14" column="66" />
+        <mark key="." line="14" column="66" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/@projects_sjbs/@personal/scrapy_test/src/tutorial/tutorial/settings.py" timestamp="1560915353542">
+        <mark key="[" line="57" column="0" />
+      </file>
       <file name="$USER_HOME$/OneDrive/@projects_sjbs/@personal/aws/requirements.txt" timestamp="1560752451082">
         <mark key="[" line="0" column="0" />
       </file>
     </filemarks>
-    <jumps />
+    <jumps>
+      <jump line="10" column="43" filename="$USER_HOME$/OneDrive/@projects_sjbs/@personal/scrapy_test/src/tutorial/tutorial/spiders/quotes_spider.py" />
+    </jumps>
     <registers>
       <register name="&quot;" type="4">
         <text>a</text>
@@ -27,6 +40,10 @@
       <show-last>false</show-last>
     </search>
     <history />
-    <shortcut-conflicts />
+    <shortcut-conflicts>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed F</text>
+      </shortcut-conflict>
+    </shortcut-conflicts>
   </component>
 </application>
