@@ -382,7 +382,7 @@
           <IdeaActionID>Run</IdeaActionID>
           <ShortCut>'Shift+F10'</ShortCut>
           <Description>Run 'flag_classification'</Description>
-          <Count>37</Count>
+          <Count>46</Count>
         </Item>
       </Statistic>
       <Statistic Action="Run 'linestrings_to_geojson'">
