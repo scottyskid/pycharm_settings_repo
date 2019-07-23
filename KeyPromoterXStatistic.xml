@@ -86,7 +86,7 @@
           <IdeaActionID>$Delete</IdeaActionID>
           <ShortCut>'Delete'</ShortCut>
           <Description>Delete...</Description>
-          <Count>36</Count>
+          <Count>37</Count>
         </Item>
       </Statistic>
       <Statistic Action="Duplicate Watch">
@@ -414,7 +414,7 @@
           <IdeaActionID>RunClass</IdeaActionID>
           <ShortCut>'Ctrl+Shift+F10'</ShortCut>
           <Description>Run 'product_scrape'</Description>
-          <Count>36</Count>
+          <Count>43</Count>
         </Item>
       </Statistic>
       <Statistic Action="Run 'read_winstonslab'">
