@@ -393,6 +393,14 @@
           <Count>51</Count>
         </Item>
       </Statistic>
+      <Statistic Action="Run 'ftp_pull'">
+        <Item>
+          <IdeaActionID>RunClass</IdeaActionID>
+          <ShortCut>'Ctrl+Shift+F10'</ShortCut>
+          <Description>Run 'ftp_pull'</Description>
+          <Count>1</Count>
+        </Item>
+      </Statistic>
       <Statistic Action="Run 'linestrings_to_geojson'">
         <Item>
           <IdeaActionID>Run</IdeaActionID>
