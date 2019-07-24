@@ -18,6 +18,7 @@
       <mapping pattern="cmd_commands" type="PLAIN_TEXT" />
       <mapping pattern="credentials" type="PLAIN_TEXT" />
       <mapping ext="pkl" type="PLAIN_TEXT" />
+      <mapping ext="config" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
