@@ -398,7 +398,7 @@
           <IdeaActionID>RunClass</IdeaActionID>
           <ShortCut>'Ctrl+Shift+F10'</ShortCut>
           <Description>Run 'ftp_pull'</Description>
-          <Count>8</Count>
+          <Count>30</Count>
         </Item>
       </Statistic>
       <Statistic Action="Run 'linestrings_to_geojson'">
