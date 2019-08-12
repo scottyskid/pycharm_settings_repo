@@ -150,7 +150,7 @@
           <IdeaActionID>FileChooser.NewFolder</IdeaActionID>
           <ShortCut>'Alt+Insert' or 'Ctrl+N'</ShortCut>
           <Description>New Folder...</Description>
-          <Count>9</Count>
+          <Count>10</Count>
         </Item>
       </Statistic>
       <Statistic Action="New Scratch File">
@@ -398,7 +398,7 @@
           <IdeaActionID>RunClass</IdeaActionID>
           <ShortCut>'Ctrl+Shift+F10'</ShortCut>
           <Description>Run 'ftp_pull'</Description>
-          <Count>35</Count>
+          <Count>56</Count>
         </Item>
       </Statistic>
       <Statistic Action="Run 'linestrings_to_geojson'">
