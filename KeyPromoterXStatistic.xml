@@ -377,6 +377,14 @@
           <Count>5</Count>
         </Item>
       </Statistic>
+      <Statistic Action="Run 'finance_reporting__etl_convert_to_csv'">
+        <Item>
+          <IdeaActionID>Run</IdeaActionID>
+          <ShortCut>'Shift+F10'</ShortCut>
+          <Description>Run 'finance_reporting__etl_convert_to_csv'</Description>
+          <Count>10</Count>
+        </Item>
+      </Statistic>
       <Statistic Action="Run 'find_sa4'">
         <Item>
           <IdeaActionID>Run</IdeaActionID>
