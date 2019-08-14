@@ -238,7 +238,7 @@
           <IdeaActionID>RenameElement</IdeaActionID>
           <ShortCut>'Shift+F6'</ShortCut>
           <Description>Rename...</Description>
-          <Count>11</Count>
+          <Count>12</Count>
         </Item>
       </Statistic>
       <Statistic Action="Rerun 'abs_table_builder_parser'">
@@ -382,7 +382,7 @@
           <IdeaActionID>Run</IdeaActionID>
           <ShortCut>'Shift+F10'</ShortCut>
           <Description>Run 'finance_reporting__etl_convert_to_csv'</Description>
-          <Count>27</Count>
+          <Count>49</Count>
         </Item>
       </Statistic>
       <Statistic Action="Run 'find_sa4'">
