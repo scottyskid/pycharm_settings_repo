@@ -86,7 +86,7 @@
           <IdeaActionID>$Delete</IdeaActionID>
           <ShortCut>'Delete'</ShortCut>
           <Description>Delete...</Description>
-          <Count>37</Count>
+          <Count>38</Count>
         </Item>
       </Statistic>
       <Statistic Action="Duplicate Watch">
@@ -382,7 +382,7 @@
           <IdeaActionID>Run</IdeaActionID>
           <ShortCut>'Shift+F10'</ShortCut>
           <Description>Run 'finance_reporting__etl_convert_to_csv'</Description>
-          <Count>72</Count>
+          <Count>85</Count>
         </Item>
       </Statistic>
       <Statistic Action="Run 'find_sa4'">
