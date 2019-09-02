@@ -473,6 +473,14 @@
           <Count>1</Count>
         </Item>
       </Statistic>
+      <Statistic Action="Run 'sam__im_dashboard__etl__email_read'">
+        <Item>
+          <IdeaActionID>Run</IdeaActionID>
+          <ShortCut>'Shift+F10'</ShortCut>
+          <Description>Run 'sam__im_dashboard__etl__email_read'</Description>
+          <Count>1</Count>
+        </Item>
+      </Statistic>
       <Statistic Action="Run 'store_scraping'">
         <Item>
           <IdeaActionID>Run</IdeaActionID>
