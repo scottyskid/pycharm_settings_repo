@@ -494,7 +494,7 @@
           <IdeaActionID>Run</IdeaActionID>
           <ShortCut>'Shift+F10'</ShortCut>
           <Description>Run 'sam__im_dashboard__etl__email_read'</Description>
-          <Count>218</Count>
+          <Count>221</Count>
         </Item>
       </Statistic>
       <Statistic Action="Run 'store_scraping'">
