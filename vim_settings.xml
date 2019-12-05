@@ -1,45 +1,6 @@
 <application>
   <component name="VimSettings">
-    <state version="4" enabled="false" />
-    <globalmarks />
-    <filemarks>
-      <file name="$USER_HOME$/OneDrive/@projects_sjbs/@personal/scrapy_test/src/tutorial/tutorial/pipelines.py" timestamp="1560914695826" />
-      <file name="$USER_HOME$/OneDrive/@projects_sjbs/@personal/aws/.aws/config" timestamp="1560752381669">
-        <mark key="[" line="1" column="9" />
-        <mark key="]" line="1" column="9" />
-        <mark key="." line="1" column="9" />
-        <mark key="^" line="1" column="9" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/@projects_sjbs/@personal/scrapy_test/src/tutorial/tutorial/spiders/quotes_spider.py" timestamp="1560917792296">
-        <mark key="'" line="10" column="43" />
-        <mark key="[" line="19" column="62" />
-        <mark key="]" line="19" column="61" />
-        <mark key="^" line="19" column="61" />
-        <mark key="." line="19" column="61" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/@projects_sjbs/@personal/scrapy_test/src/tutorial/tutorial/settings.py" timestamp="1560915353542">
-        <mark key="[" line="57" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/@projects_sjbs/@personal/aws/requirements.txt" timestamp="1560752451082">
-        <mark key="[" line="0" column="0" />
-      </file>
-    </filemarks>
-    <jumps>
-      <jump line="10" column="43" filename="$USER_HOME$/OneDrive/@projects_sjbs/@personal/scrapy_test/src/tutorial/tutorial/spiders/quotes_spider.py" />
-    </jumps>
-    <registers>
-      <register name="&quot;" type="4">
-        <text>a</text>
-      </register>
-      <register name="-" type="4">
-        <text>a</text>
-      </register>
-    </registers>
-    <search>
-      <last-dir>0</last-dir>
-      <show-last>false</show-last>
-    </search>
-    <history />
+    <state version="5" enabled="false" />
     <shortcut-conflicts>
       <shortcut-conflict owner="ide">
         <text>ctrl pressed F</text>
@@ -51,5 +12,10 @@
         <text>ctrl pressed V</text>
       </shortcut-conflict>
     </shortcut-conflicts>
+    <editor />
+    <notifications>
+      <idea-join enabled="false" />
+      <idea-put enabled="false" />
+    </notifications>
   </component>
 </application>
