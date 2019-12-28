@@ -7,6 +7,7 @@
       <mapping pattern="config" type="PLAIN_TEXT" />
       <mapping pattern="cmd_commands" type="PLAIN_TEXT" />
       <mapping pattern="functions_and_classes" type="PLAIN_TEXT" />
+      <mapping pattern="21_input.txt" type="PLAIN_TEXT" />
       <mapping ext="pkl" type="PLAIN_TEXT" />
       <mapping ext="config" type="PLAIN_TEXT" />
       <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
